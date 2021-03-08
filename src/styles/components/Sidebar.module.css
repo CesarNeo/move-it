@@ -1,0 +1,64 @@
+.containerSidebar{
+    height: 100vh;
+    width: 7rem;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+    display: flex;
+    position: absolute;
+    align-items: center;
+    box-shadow: 0 2px 60px rgba(0, 0, 0, 0.05);
+
+    flex-direction: column;
+}
+
+.containerLogo img{
+    margin-top: 1rem;
+} 
+
+.containerImageHome {
+    margin: 36vh 0 2rem;
+    width: 100%;
+}
+
+.containerImageHome .containerImageHomeNotActive {
+    display: flex;
+    justify-content: center;
+}
+
+.containerImageHome .containerImageHomeNotActive img:hover {
+    background-image: url('/home-color.svg');
+}
+
+.containerImageHome .containerImageHomeActive {
+    border-left: 3px solid var(--blue);
+    display: flex;
+    justify-content: center;
+}
+
+.containerImageHome .containerImageHomeActive img {
+    margin-right: 0.2rem;
+}
+
+.containerImageAward {
+    width: 100%;
+}
+
+.containerImageAward .containerImageAwardNotActive {
+    display: flex;
+    justify-content: center;
+}
+
+.containerImageAward .containerImageAwardNotActive img:hover {
+    background-image: url('/award-color.svg');
+}
+
+.containerImageAward .containerImageAwardActive {
+    border-left: 3px solid var(--blue);
+    display: flex;
+    justify-content: center;
+}
+
+.containerImageAward .containerImageAwardActive img {
+    margin-right: 0.2rem;
+}

@@ -1,0 +1,136 @@
+.container {
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+.container header {
+    margin-bottom: 1rem;
+}
+
+.container header h1 {
+    color: var(--title);
+    margin-bottom: 3rem;
+}
+.container header footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}   
+.container header footer section span {
+    color: var(--text);
+    font-weight: 600;
+    font-family: 'Inter' sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+.container header footer .sectionLeft > span {
+   margin-right: 2.4rem;
+}
+
+.container header footer .sectionRight span:first-child {
+    margin-right: 8rem;
+    margin-left: 8.5rem;
+}
+
+.container main {
+    flex: 1;
+}
+
+.container main article {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 0.3rem;
+
+    width: 100%;
+    height: 96px;
+}
+
+.container main article + article {
+    margin-top: 0.7rem;
+}
+
+.container main article .containerPosition {
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+}
+
+.container main article .containerPosition span {
+    color: var(--text);
+    font: 500 1.5rem 'Inter', sans-serif;
+}
+
+.container main article .containerRanking {
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    border-radius: 0 5px 5px 0;
+}
+
+.container main article .containerRanking .containerProfile {
+    display: flex;
+    align-items: center;
+}
+
+.container main article .containerRanking .containerProfile > img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+}
+
+.container main article .containerRanking .containerProfile div {
+    margin-left: 1.5rem;
+}
+
+.container main article .containerRanking .containerProfile div strong {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--title);
+}
+
+.container main article .containerRanking .containerProfile div p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.container main article .containerRanking .containerProfile div p img {
+    margin-right: 0.5rem;
+}
+
+.container main article .containerRanking .containerChallenges {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container main article .containerRanking .containerChallenges .containerChallengeText span{
+    margin-right: 0.2rem;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.container main article .containerRanking .containerChallenges .containerChallengeText {
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+.container main article .containerRanking .containerChallenges .containerExperienceText {
+    margin-right: 4rem;
+    font-weight: 500;
+}
+
+.container main article .containerRanking .containerChallenges .containerExperienceText span {
+    margin-right: 0.2rem;
+    color: var(--blue);
+    font-weight: 500;
+}

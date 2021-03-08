@@ -1,0 +1,89 @@
+.containerLogin {
+    height: 100vh;
+    flex: 1;
+    background: var(--blue);
+}
+
+.containerLogin main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.containerLoginLogo {
+    margin-top: 5rem;
+}
+
+.containerLoginRight {
+    display: flex;
+    flex-direction: column;
+    margin: 0 7rem;
+    justify-content: center;
+}
+
+.containerLoginRight .logoLeft {
+    width: 80%;
+}
+
+.containerLoginRight .containerTitle {
+    margin-top: 5rem;
+}
+
+.containerLoginRight .containerTitle h1 {
+    color: var(--white);
+    font-size: 2.3rem;
+}
+
+.containerLoginRight .containerTitle > div {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.containerLoginRight .containerTitle > div p {
+    color: #B2B9FF;
+    margin-left: 1.5rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+.containerLoginRight form {
+    margin-top: 2.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.containerLoginRight form div {
+    height: 80px;
+    width: 50%;
+    background: linear-gradient(to right, rgba(73, 83, 184, 1), rgba(73, 83, 184, 0));
+    border-radius: 5px 0 0 5px;
+}
+
+.containerLoginRight form button {
+    height: 80px;
+    width: 80px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: var(--blue-dark);
+    transition: background-color 0.2s;
+}
+
+.containerLoginRight form button:hover {
+    background: var(--green);
+}
+
+.containerLoginRight form div input {
+    border: 0;
+    background: none;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.containerLoginRight form div input::placeholder {
+    color: #B2B9FF;
+}
