@@ -5,6 +5,7 @@
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
+ <a href="#pre-requisitos">Pré-requisitos</a> •
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a>
 </p>
@@ -18,7 +19,7 @@ Fazer qualquer pessoa que fica muito tempo em frente ao computador, pratique um 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Yarn](https://classic.yarnpkg.com/en/docs/install#debian-stable). 
 
-### 🛠 Tecnologias
+### Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
