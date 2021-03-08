@@ -1,60 +1,45 @@
-import { CompletedChallenges } from '../components/CompletedChallenges';
-import { Countdown } from '../components/Countdown';
-import { ExperienceBar } from '../components/ExperiencecBar';
-import { Profile } from '../components/Profile';
-import { GetServerSideProps } from 'next';
-
 import Head from 'next/head';
 
-import styles from '../styles/pages/Home.module.css';
-import { ChallengeBox } from '../components/ChallengeBox';
-import { CountdownProvider } from '../contexts/CountdownContext';
-import { ChallengesProvider } from '../contexts/ChallengesContext';
+import styles from '../styles/pages/Login.module.css';
 
-interface HomeProps {
-  level: number,
-  currentExperience: number,
-  challengesCompleted: number
-}
+export default function Login() {
+    return (
+        <div className={styles.containerLogin}>
+            <Head>
+                <title>Login | move.it</title>
+            </Head>
+            <main>
+                <div className={styles.containerLoginLogo}>
+                    <img src="/simbolo-moveit.svg" alt="Logo moveit" />
+                </div>
+                <div className={styles.containerLoginRight}>
+                    <div className={styles.logoLeft}>
+                        <img src="/Logo-full-moveit.svg" alt="Logo moveit" />
+                    </div>
 
-export default function Home(props: HomeProps) {
-  return (
-    <ChallengesProvider
-      level={props.level}
-      currentExperience={props.currentExperience}
-      challengesCompleted={props.challengesCompleted}
-    >
-      <div className={styles.container} >
-        <Head>
-          <title>Início | move.it</title>
-        </Head>
-        <ExperienceBar />
+                    <div className={styles.containerTitle}>
+                        <h1>Bem-vindo</h1>
+                        <div>
+                            <img src="/Github.svg" alt="Github logo" />
+                            <p>Faça login com seu Github para começar</p>
+                        </div>
+                    </div>
 
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompletedChallenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
-      </div>
-    </ ChallengesProvider>
-  )
-}
-
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const { level, currentExperience, challengesCompleted } = ctx.req.cookies;
-
-  return {
-    props: {
-      level: Number(level),
-      currentExperience: Number(currentExperience),
-      challengesCompleted: Number(challengesCompleted)
-    }
-  };
+                    <form action="/home">
+                        <div>
+                            <input
+                                type="text"
+                                name="userGithub"
+                                id="userGithub"
+                                placeholder="Digite seu username"
+                            />
+                        </div>
+                        <button type="submit">
+                            <img src="/Vector-right.svg" alt="Seta para direita" />
+                        </button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    );
 }
