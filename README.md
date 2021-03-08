@@ -5,7 +5,7 @@
 
 <p align="center">
  <a href="#objetivo">Objetivo</a> •
- <a href="#pre-requisitos">Pré-requisitos</a> •
+ <a href="#pré-requisitos">Pré-requisitos</a> •
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a>
 </p>
